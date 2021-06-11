@@ -17,7 +17,11 @@ class ViaCepService
     public function getLocation()
     {
         $url = Http::get("https://viacep.com.br/ws/{$this->cep}/json/");
-
-        return $url->json();
+        if ($url->status() === 200 && $url->json()) {
+            return $url->json();
+        }
+        else {
+            session()->flash('message', 'Cep não encontrado!');
+        }
     }
 }
