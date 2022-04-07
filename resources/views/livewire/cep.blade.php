@@ -1,6 +1,6 @@
 <div>
 {{--    <form action="" wire:submit.prevent="searchAddress">--}}
-        <div class="flex min-h-screen flex-col items-center justify-center bg-blue-100">
+        <div class="flex min-h-screen flex-col items-center justify-center bg-red-500">
             <div class="flex flex-col w-1/3 bg-white p-4 rounded-md items-center">
                 <h1 class="uppercase font-medium">Procure seu cep</h1>
 
